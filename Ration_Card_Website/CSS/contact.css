@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+
+body {
+    background: #EEF3F8;
+
+}
+
+.contact {
+    background: #EEF3F8;
+}
+
+.contact-page {
+    height: 884px;
+    padding: 60px 64px;
+    background: #EEF3F8;
+
+}
+
+/* Title */
+
+.contact-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+/* Description */
+
+.contact-desc {
+    font-size: 20px;
+    line-height: 21px;
+    color: #4D7399;
+    margin: 8px 0 30px;
+    margin-bottom: 70px;
+}
+
+/* Section Heading */
+
+.contact-section-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 30px 0 15px;
+}
+
+/* FAQ */
+
+.faq-box {
+    width: 1247px;
+    height: 53px;
+    background: #F7FAFC;
+    border: 1px solid #CFDBE8;
+    border-radius: 8px;
+    padding: 7px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.faq-box {
+    width: 1247px;
+    height: 53px;
+    padding: 7px 15px;
+    background: #F7FAFC;
+    border: 1px solid #CFDBE8;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+    cursor: pointer;
+}
+
+.faq-arrow {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* Contact Info */
+
+.contact-info {
+    width: 1263px;
+    background: #F7FAFC;
+}
+
+.contact-row {
+    height: 72px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left Side */
+
+.contact-left {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    background: #E8EDF2;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+
+/* Text */
+
+.contact-main {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact-sub {
+    font-size: 14px;
+    color: #4D7399;
+}
+
+.contact-detail {
+    font-size: 16px;
+}
+
+/* ================= TABLET / LAPTOP (max-width: 1024px) ================= */
+@media (max-width: 1024px) {
+
+    .contact-page {
+        height: auto;
+        padding: 40px 30px;
+    }
+
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-desc {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 50px;
+    }
+
+    .faq-box {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .faq-arrow {
+        width: 16px;
+        height: 16px;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 12px 10px;
+        gap: 10px;
+    }
+
+    .contact-left {
+        gap: 10px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-main {
+        font-size: 15px;
+    }
+
+    .contact-sub {
+        font-size: 13px;
+    }
+
+    .contact-detail {
+        font-size: 15px;
+    }
+}
+
+/* ================= MOBILE (max-width: 767px) ================= */
+@media (max-width: 767px) {
+
+    .contact-page {
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-desc {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 40px;
+    }
+
+    .faq-box {
+        width: 100%;
+        height: auto;
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    .faq-arrow {
+        width: 14px;
+        height: 14px;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px 8px;
+        gap: 8px;
+    }
+
+    .contact-left {
+        gap: 8px;
+    }
+
+    .icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .icon img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .contact-main {
+        font-size: 14px;
+    }
+
+    .contact-sub {
+        font-size: 12px;
+    }
+
+    .contact-detail {
+        font-size: 14px;
+    }
+}

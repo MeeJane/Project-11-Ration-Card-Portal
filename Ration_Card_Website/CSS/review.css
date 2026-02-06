@@ -1,0 +1,295 @@
+:root {
+    --dark-blue: #373C7D;
+    --light-blue: #E8EDF2;
+    --font-family: "Inter";
+}
+
+.review {
+    background: #E8EDF2;
+    width: 113vw;
+    height: 1402px;
+
+}
+
+
+.review-container {
+    background: #E8EDF2;
+
+    width: 1440px;
+    margin: auto;
+    padding: 40px 98px;
+}
+
+/* TITLE */
+
+.review-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* SECTION */
+
+.review-section {
+    border: 1px solid #00000040;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+/* SUB HEADING */
+
+.review-heading {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+/* INNER BOX */
+
+.review-box {
+    border: 1px solid #00000040;
+    box-shadow: 0 4px 4px #00000040;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+/* TWO COLUMN ROW */
+
+.review-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+/* SINGLE ROW */
+
+.review-single {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* ITEM */
+
+.review-item small {
+    font-size: 14px;
+    color: #4D7399;
+}
+
+.review-item p {
+    font-size: 14px;
+    margin: 4px 0 0;
+}
+
+/* CHECKBOX */
+
+.review-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.review-checkbox-wrapper input {
+    display: none;
+}
+
+.review-checkmark {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 2px solid #1280ED;
+    position: relative;
+}
+
+.review-checkbox-wrapper input:checked+.review-checkmark::after {
+    content: "✓";
+    position: absolute;
+    left: 3px;
+    top: -2px;
+    color: #1280ED;
+    font-size: 18px;
+}
+
+.review-confirm-text {
+    font-size: 20px;
+}
+
+/* BUTTON */
+
+.review-submit-btn {
+    margin-top: 40px;
+    width: 480px;
+    height: 48px;
+    border-radius: 8px;
+    background: #373C7D;
+    border: none;
+    color: #F7FAFC;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.review-submit-btn:hover {
+    opacity: .9;
+}
+
+/* ======================= MOBILE DEVICES ======================= */
+@media (max-width: 767px) {
+    .review {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .review-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* TITLE */
+    .review-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* SECTION */
+    .review-section {
+        padding: 12px;
+        margin-bottom: 16px;
+    }
+
+    /* SUB HEADING */
+    .review-heading {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    /* INNER BOX */
+    .review-box {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    /* TWO COLUMN ROW -> STACKED */
+    .review-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* ITEM */
+    .review-item small {
+        font-size: 12px;
+    }
+
+    .review-item p {
+        font-size: 12px;
+    }
+
+    /* CHECKBOX */
+    .review-checkbox-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+    .review-checkmark {
+        width: 18px;
+        height: 18px;
+    }
+
+    .review-checkbox-wrapper input:checked+.review-checkmark::after {
+        font-size: 16px;
+        left: 2px;
+        top: -2px;
+    }
+
+    .review-confirm-text {
+        font-size: 16px;
+    }
+
+    /* BUTTON */
+    .review-submit-btn {
+        width: 100%;
+        font-size: 16px;
+        height: 44px;
+        margin-top: 20px;
+    }
+}
+
+/* ======================= LAPTOP / DESKTOP ======================= */
+@media (min-width: 768px) {
+    .review {
+        width: 113vw;
+        height: 1402px;
+    }
+
+    .review-container {
+        width: 1440px;
+        padding: 40px 98px;
+    }
+
+    .review-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .review-section {
+        padding: 16px;
+        margin-bottom: 24px;
+    }
+
+    .review-heading {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .review-box {
+        padding: 20px;
+        margin-bottom: 16px;
+    }
+
+    .review-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    .review-item small {
+        font-size: 14px;
+    }
+
+    .review-item p {
+        font-size: 14px;
+    }
+
+    .review-checkbox-wrapper {
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        margin-top: 30px;
+    }
+
+    .review-checkmark {
+        width: 20px;
+        height: 20px;
+    }
+
+    .review-checkbox-wrapper input:checked+.review-checkmark::after {
+        font-size: 18px;
+        left: 3px;
+        top: -2px;
+    }
+
+    .review-confirm-text {
+        font-size: 20px;
+    }
+
+    .review-submit-btn {
+        width: 480px;
+        height: 48px;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+}

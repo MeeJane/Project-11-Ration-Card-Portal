@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ration Card Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/step2.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" class="logo-img">
+            <span class="logo-text">G-E-Portal</span>
+        </div>
+
+        <!-- Remaining Space -->
+        <div class="header-right">
+            <!-- Navigation -->
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <!-- Login Button -->
+            <button class="login-btn" onclick="window.location.href= 'login.html'">Login</button>
+        </div>
+    </header>
+
+    <div class="application_step2">
+
+        <div class="step2-container">
+
+            <!-- STEP BAR -->
+
+            <div class="step2-bar">
+
+                <div class="step2-line active"></div>
+                <div class="step2-line"></div>
+                <div class="step2-line"></div>
+
+                <div class="step2-circle">1</div>
+                <div class="step2-circle">2</div>
+                <div class="step2-circle">3</div>
+                <div class="step2-circle">4</div>
+
+            </div>
+
+
+
+            <!-- FORM -->
+
+            <div class="step2-form">
+
+                <h2 class="step2-title">Address Details</h2>
+
+                <!-- DISTRICT -->
+
+                <div class="step2-field step2-dropdown-wrapper">
+                    <label>District</label>
+                    <input id="district" placeholder="Select District" readonly>
+                    <img src="images/Vector - 0.png" class="step2-dropdown-icon" onclick="toggleMenu('districtMenu')">
+                    <div class="step2-menu" id="districtMenu">
+                        <div>Thoothukudi</div>
+                        <div>Thirunelveli</div>
+                        <div>Madurai</div>
+                        <div>Karoor</div>
+                        <div>Viruthunagar</div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- TALUK -->
+                <div class="step2-field step2-dropdown-wrapper">
+                    <label>Taluk</label>
+                    <input id="taluk" placeholder="Select Taluk" readonly>
+                    <img src="images/Vector - 0.png" class="step2-dropdown-icon" onclick="toggleMenu('talukMenu')">
+
+                    <div class="step2-menu" id="talukMenu">
+                        <div>Ettayapuram</div>
+                        <div>Vilathikulam</div>
+                        <div>Kovilpatti</div>
+                    </div>
+                </div>
+
+                <!-- VILLAGE -->
+                <div class="step2-field step2-dropdown-wrapper">
+                    <label>Village/City</label>
+                    <input id="village" placeholder="Select Village/City" readonly>
+                    <img src="images/Vector - 0.png" class="step2-dropdown-icon" onclick="toggleMenu('villageMenu')">
+
+                    <div class="step2-menu" id="villageMenu">
+                        <div>Masarpatti</div>
+                        <div>Melakaranthai</div>
+                        <div>Kelakaranthai</div>
+                    </div>
+                </div>
+
+
+                <!-- ADDRESS -->
+
+                <div class="step2-field">
+                    <label>Full Address</label>
+                    <textarea id="address" rows=10></textarea>
+                </div>
+
+                <!-- PINCODE -->
+
+                <div class="step2-field">
+                    <label>Pincode</label>
+                    <input id="pincode" placeholder="Enter Pincode">
+                </div>
+
+                <!-- BUTTONS -->
+
+                <div class="step2-buttons">
+
+                    <button class="step2-prev" onclick="location.href='application_step1.html'">Previous</button>
+
+                    <button class="step2-next" onclick="location.href='application_step3.html'">Next</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <span>Terms of Service</span>
+                <span>Privacy Policy</span>
+                <span>Accessibility</span>
+            </div>
+
+            <div class="footer-copy">
+                © 2024 Ration Card Services. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Get references to all input/textarea fields
+        const district = document.getElementById("district");
+        const taluk = document.getElementById("taluk");
+        const village = document.getElementById("village");
+        const address = document.getElementById("address");
+        const pincode = document.getElementById("pincode");
+
+        // Auto-fill on focus
+        district.addEventListener("focus", () => district.value = "Thoothukudi");
+        taluk.addEventListener("focus", () => taluk.value = "Ettayapuram");
+        village.addEventListener("focus", () => village.value = "Masarpatti");
+        address.addEventListener("focus", () => {
+            address.value = "1/205, masarpatti, masarpatti(po), Ettayapuram (tk), thoothukudi(dist), pincode-626202";
+        });
+        pincode.addEventListener("focus", () => pincode.value = "626202");
+
+        // Dropdown toggle function
+
+        function toggleMenu(id) {
+            const menu = document.getElementById(id);
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+
+
+        // function setValue(field, value) {
+        //     document.getElementById(field).value = value;
+        //     document.getElementById(field + "Menu")?.style.display = "none";
+        // }
+    </script>
+
+    <script>
+
+
+
+        /* AUTO FILL */
+
+        district.addEventListener("focus", () => district.value = "Thoothukudi");
+        taluk.addEventListener("focus", () => taluk.value = "Ettayapuram");
+        village.addEventListener("focus", () => village.value = "Masarpatti");
+
+        address.addEventListener("focus", () => {
+            address.value = "1/205,masarpatti,masarpatti(po),Ettayapuram (tk),thoothukudi(dist),pincode-626202";
+        });
+
+        pincode.addEventListener("focus", () => pincode.value = "626202");
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ration Card Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/step1.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" class="logo-img">
+            <span class="logo-text">G-E-Portal</span>
+        </div>
+
+        <!-- Remaining Space -->
+        <div class="header-right">
+            <!-- Navigation -->
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <!-- Login Button -->
+            <button class="login-btn" onclick="window.location.href= 'login.html'">Login</button>
+        </div>
+    </header>
+
+    <div class="application_step1">
+
+        <div class="step1-container">
+
+            <!-- STEP BAR -->
+
+            <div class="step1-bar">
+
+                <div class="step1-line"></div>
+
+                <div class="step1-circle">1</div>
+                <div class="step1-circle">2</div>
+                <div class="step1-circle">3</div>
+                <div class="step1-circle">4</div>
+
+            </div>
+
+            <!-- FORM -->
+
+            <div class="step1-form">
+
+                <div class="step1-title">Applicant Details</div>
+
+                <div class="step1-field">
+                    <label class="step1-label">Name</label>
+                    <input id="name" class="step1-input" placeholder="Enter your full name">
+                </div>
+
+                <div class="step1-field step1-gender-wrapper">
+
+                    <label class="step1-label">Gender</label>
+
+                    <input id="gender" class="step1-input" readonly>
+
+                    <img src="images/Vector - 0.png" class="step1-gender-icon" onclick="toggleGender()">
+
+                    <div class="step1-gender-menu" id="genderMenu">
+
+                        <div class="step1-radio-row">
+                            <input type="radio" name="gender">
+                            <label>Male</label>
+                        </div>
+
+                        <div class="step1-radio-row">
+                            <input type="radio" name="gender">
+                            <label>Female</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="step1-field">
+                    <label class="step1-label">Date of Birth</label>
+                    <input id="dob" class="step1-input" placeholder="DD/MM/YYYY">
+                </div>
+
+                <div class="step1-field">
+                    <label class="step1-label">Aadhaar Number</label>
+                    <input id="aadhaar" class="step1-input" placeholder="Enter your 12-digit Aadhaar number">
+                </div>
+
+                <div class="step1-field">
+                    <label class="step1-label">Mobile Number</label>
+                    <input id="mobile" class="step1-input" placeholder="Enter your 10-digit mobile number">
+                </div>
+
+                <button class="step1-next" onclick="location.href='Application_step2.html'">
+                    Next
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <span>Terms of Service</span>
+                <span>Privacy Policy</span>
+                <span>Accessibility</span>
+            </div>
+
+            <div class="footer-copy">
+                © 2024 Ration Card Services. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleGender() {
+            const menu = document.getElementById("genderMenu");
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+
+        /* AUTO FILL ON CLICK */
+
+        document.getElementById("name").addEventListener("focus", () => {
+            document.getElementById("name").value = "Priya Sharma";
+        });
+
+        document.getElementById("gender").addEventListener("focus", () => {
+            document.getElementById("gender").value = "Female";
+        });
+
+        document.getElementById("dob").addEventListener("focus", () => {
+            document.getElementById("dob").value = "26-06-1997";
+        });
+
+        document.getElementById("aadhaar").addEventListener("focus", () => {
+            document.getElementById("aadhaar").value = "6363 8545 6954";
+        });
+
+        document.getElementById("mobile").addEventListener("focus", () => {
+            document.getElementById("mobile").value = "9361485675";
+        });
+    </script>
+
+
+
+</body>
+
+</html>

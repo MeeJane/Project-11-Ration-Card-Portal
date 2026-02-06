@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ration Card Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font-Inter -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font- Public sans -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/tracking.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" class="logo-img">
+            <span class="logo-text">G-E-Portal</span>
+        </div>
+
+        <!-- Remaining Space -->
+        <div class="header-right">
+            <!-- Navigation -->
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <!-- Login Button -->
+            <button class="login-btn" onclick="window.location.href= 'login.html'">Login</button>
+        </div>
+    </header>
+
+    <div class="track">
+
+        <div class="track-page">
+
+            <div class="track-container">
+
+                <div class="track-title">Track Your Application Status</div>
+
+                <div class="track-label">Application Number</div>
+
+                <input class="track-input" id="trackApp" placeholder="Enter your application number">
+
+                <div class="track-label">Registered Mobile Number</div>
+
+                <input class="track-input" id="trackMobile" placeholder="Enter your registered mobile number">
+
+                <button class="track-btn" onclick="window.location.href = 'download.html'">View Status</button>
+
+                <div class="track-help">
+                    For any queries, please contact our helpline at 1800-123-4567
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <span>Terms of Service</span>
+                <span>Privacy Policy</span>
+                <span>Accessibility</span>
+            </div>
+
+            <div class="footer-copy">
+                © 2024 Ration Card Services. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        /* Application Number Autofill */
+
+        const app = document.getElementById("trackApp");
+
+        app.addEventListener("focus", function () {
+            if (this.value === "") {
+                this.value = "UCS20060545875621";
+                this.style.fontFamily = "Inter";
+                this.style.fontWeight = "500";
+            }
+        });
+
+        /* Mobile Autofill */
+
+        const mobile = document.getElementById("trackMobile");
+
+        mobile.addEventListener("focus", function () {
+            if (this.value === "") {
+                this.value = "9365875485";
+                this.style.fontFamily = "Public Sans";
+                this.style.color = "#4D7399";
+            }
+        });
+
+    </script>
+
+
+</body>
+
+</html>

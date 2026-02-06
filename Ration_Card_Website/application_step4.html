@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ration Card Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/step4.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" class="logo-img">
+            <span class="logo-text">G-E-Portal</span>
+        </div>
+
+        <!-- Remaining Space -->
+        <div class="header-right">
+            <!-- Navigation -->
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <!-- Login Button -->
+            <button class="login-btn" onclick="window.location.href= 'login.html'">Login</button>
+        </div>
+    </header>
+
+    <div class="appli_step4">
+
+        <!-- step-bar -->
+        <div class="step2-bar">
+
+            <div class="step2-line active"></div>
+
+            <div class="step2-line active"></div>
+            <div class="step2-line active"></div>
+
+            <div class="step2-circle">1</div>
+            <div class="step2-circle">2</div>
+            <div class="step2-circle">3</div>
+            <div class="step2-circle">4</div>
+
+        </div>
+
+
+        <div class="step4-container">
+
+            <!-- STEP BAR SPACE -->
+            <div style="height:100px"></div>
+
+            <div class="step4-title">Upload Documents</div>
+
+            <div class="step4-desc">
+                Please upload the following documents to complete your application. Ensure all documents are clear and
+                legible.
+            </div>
+
+            <div class="step4-subtitle">Required Documents</div>
+
+            <!-- DOCUMENT BOXES -->
+
+            <div class="step4-box">
+                <div class="step4-left">
+                    <div class="step4-icon">📄</div>
+                    <div>
+                        <div class="step4-box-title">Aadhaar Card</div>
+                        <div class="step4-box-desc">Upload a clear copy of your Aadhaar card.</div>
+                    </div>
+                </div>
+                <button class="step4-upload" onclick="markUploaded(this)">Upload</button>
+
+            </div>
+
+            <div class="step4-box">
+                <div class="step4-left">
+                    <div class="step4-icon">📄</div>
+                    <div>
+                        <div class="step4-box-title">Address Proof</div>
+                        <div class="step4-box-desc">Upload any document as proof of your current address.</div>
+                    </div>
+                </div>
+                <button class="step4-upload" onclick="markUploaded(this)">Upload</button>
+
+            </div>
+
+            <div class="step4-box">
+                <div class="step4-left">
+                    <div class="step4-icon">📄</div>
+                    <div>
+                        <div class="step4-box-title">Income Certificate</div>
+                        <div class="step4-box-desc">Upload your income certificate.</div>
+                    </div>
+                </div>
+                <button class="step4-upload" onclick="markUploaded(this)">Upload</button>
+
+            </div>
+
+            <div class="step4-box">
+                <div class="step4-left">
+                    <div class="step4-icon">📄</div>
+                    <div>
+                        <div class="step4-box-title">Passport Photo</div>
+                        <div class="step4-box-desc">Upload a recent passport photo.</div>
+                    </div>
+                </div>
+                <button class="step4-upload" onclick="markUploaded(this)">Upload</button>
+
+            </div>
+
+            <div class="step4-box">
+                <div class="step4-left">
+                    <div class="step4-icon">📄</div>
+                    <div>
+                        <div class="step4-box-title">Marriage Certificate</div>
+                        <div class="step4-box-desc">Upload your married certificate.</div>
+                    </div>
+                </div>
+                <button class="step4-upload" onclick="markUploaded(this)">Upload</button>
+
+            </div>
+
+            <!-- BUTTONS -->
+
+            <div class="step4-buttons">
+                <button class="step4-prev" onclick="location.href='application_step3.html'">Previous</button>
+
+                <button class="step4-submit" onclick="location.href='review.html'">
+                    Submit Application
+                </button>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <span>Terms of Service</span>
+                <span>Privacy Policy</span>
+                <span>Accessibility</span>
+            </div>
+
+            <div class="footer-copy">
+                © 2024 Ration Card Services. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function markUploaded(btn) {
+
+            btn.classList.add("uploaded");
+            btn.innerText = "Uploaded";
+
+            // prevent multiple clicks
+            btn.disabled = true;
+        }
+    </script>
+
+
+
+</body>
+
+</html>

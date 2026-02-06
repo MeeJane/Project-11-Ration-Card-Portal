@@ -1,0 +1,493 @@
+:root {
+    --dark-blue: #373C7D;
+    --light-blue: #E8EDF2;
+    --font-family: "Inter";
+}
+
+.application_step1 {
+    margin: 0;
+    background: #EEF3F8;
+    font-family: var(--font-family), sans-serif;
+    padding: 40px;
+}
+
+/* ================= STEP BAR ================= */
+
+.step1-container {
+    width: 1440px;
+    margin: auto;
+    padding-top: 40px;
+    background: #EEF3F8;
+
+}
+
+.step1-bar {
+    width: 1258px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.step1-line {
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    background: white;
+    top: 36px;
+    z-index: 0;
+}
+
+.step1-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #2F357A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28.9px;
+    z-index: 1;
+}
+
+/* ================= FORM ================= */
+
+.step1-form {
+    width: 830px;
+
+}
+
+.step1-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin: 100px 0 50px 100px;
+}
+
+.step1-field {
+    margin-bottom: 22px;
+    margin-left: 230px;
+}
+
+.step1-label {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 50px;
+}
+
+.step1-input {
+    width: 830px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #CFDBE8;
+    padding: 15px;
+    background: #F7FAFC;
+    font-size: 16px;
+}
+
+/* ================= GENDER ================= */
+
+.step1-gender-wrapper {
+    position: relative;
+}
+
+.step1-gender-icon {
+    position: absolute;
+    left: 780px;
+    top: 50px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.step1-gender-menu {
+    width: 830px;
+    margin-top: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.step1-radio-row {
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #CFDBE8;
+    background: #F7FAFC;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.step1-radio-row label {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.step1-input::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #4D7399;
+    opacity: 1;
+    /* important for Firefox */
+}
+
+
+
+/* ================= NEXT BUTTON ================= */
+
+.step1-next {
+    margin-left: 1000px;
+    margin-top: 40px;
+    width: 84px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background: #2F357A;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+:root {
+    --dark-blue: #373C7D;
+    --light-blue: #E8EDF2;
+    --font-family: "Inter";
+}
+
+.application_step1 {
+    margin: 0;
+    background: #EEF3F8;
+    font-family: var(--font-family), sans-serif;
+    padding: 40px;
+}
+
+/* ================= STEP BAR ================= */
+
+.step1-container {
+    width: 1440px;
+    margin: auto;
+    padding-top: 40px;
+    background: #EEF3F8;
+
+}
+
+.step1-bar {
+    width: 1258px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.step1-line {
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    background: white;
+    top: 36px;
+    z-index: 0;
+}
+
+.step1-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #2F357A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28.9px;
+    z-index: 1;
+}
+
+/* ================= FORM ================= */
+
+.step1-form {
+    width: 830px;
+
+}
+
+.step1-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin: 100px 0 50px 100px;
+}
+
+.step1-field {
+    margin-bottom: 22px;
+    margin-left: 230px;
+}
+
+.step1-label {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 50px;
+}
+
+.step1-input {
+    width: 830px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #CFDBE8;
+    padding: 15px;
+    background: #F7FAFC;
+    font-size: 16px;
+}
+
+/* ================= GENDER ================= */
+
+.step1-gender-wrapper {
+    position: relative;
+}
+
+.step1-gender-icon {
+    position: absolute;
+    left: 780px;
+    top: 50px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.step1-gender-menu {
+    width: 830px;
+    margin-top: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.step1-radio-row {
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #CFDBE8;
+    background: #F7FAFC;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.step1-radio-row label {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.step1-input::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #4D7399;
+    opacity: 1;
+    /* important for Firefox */
+}
+
+
+
+/* ================= NEXT BUTTON ================= */
+
+.step1-next {
+    margin-left: 1000px;
+    margin-top: 40px;
+    width: 84px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background: #2F357A;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ======================= MOBILE DEVICES ======================= */
+@media (max-width: 767px) {
+    .application_step1 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .step1-container {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    /* STEP BAR */
+    .step1-bar {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .step1-circle {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .step1-line {
+        display: none;
+        /* hide line on mobile */
+    }
+
+    /* FORM */
+    .step1-form {
+        width: 100%;
+    }
+
+    .step1-title {
+        font-size: 24px;
+        margin: 50px 0 20px 0;
+    }
+
+    .step1-field {
+        margin-left: 0;
+    }
+
+    .step1-label {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .step1-input {
+        width: 100%;
+        height: 44px;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* GENDER */
+    .step1-gender-wrapper {
+        width: 100%;
+    }
+
+    .step1-gender-icon {
+        left: auto;
+        right: 10px;
+        top: 15px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .step1-radio-row {
+        height: 44px;
+        padding-left: 20px;
+    }
+
+    .step1-radio-row label {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    /* NEXT BUTTON */
+    .step1-next {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        font-size: 16px;
+        height: 38px;
+    }
+}
+
+/* ======================= LAPTOP / DESKTOP ======================= */
+@media (min-width: 768px) {
+    .application_step1 {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .step1-container {
+        width: 1440px;
+        padding-top: 40px;
+    }
+
+    .step1-bar {
+        width: 1258px;
+        flex-direction: row;
+        height: 80px;
+    }
+
+    .step1-circle {
+        width: 80px;
+        height: 80px;
+        font-size: 28.9px;
+    }
+
+    .step1-line {
+        display: block;
+    }
+
+    .step1-form {
+        width: 830px;
+    }
+
+    .step1-title {
+        font-size: 32px;
+        margin: 100px 0 50px 100px;
+    }
+
+    .step1-field {
+        margin-left: 230px;
+    }
+
+    .step1-label {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .step1-input {
+        width: 830px;
+        height: 56px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .step1-gender-wrapper {
+        width: 830px;
+    }
+
+    .step1-gender-icon {
+        left: 780px;
+        top: 50px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .step1-radio-row {
+        height: 56px;
+        padding-left: 30px;
+    }
+
+    .step1-radio-row label {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .step1-next {
+        width: 84px;
+        height: 40px;
+        margin-left: 1000px;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+
+.profile {
+    background: #E8EDF2;
+}
+
+.profile-page {
+    height: 807px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.profile-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #0D141C;
+    margin-bottom: 40px;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.profile-group {
+    height: 106px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-group label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.profile-group input {
+    width: 480px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #CFDBE8;
+    background: #F7FAFC;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0px 4px 4px #00000040;
+}
+
+.profile-group input::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.profile-group input:focus {
+    outline: none;
+    color: #000;
+}
+
+.profile-btn {
+    margin-top: 10px;
+    align-self: flex-end;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: #E8EDF2;
+    box-shadow: 0px 4px 4px #00000040;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ================= RESPONSIVENESS ================= */
+/* Tablets / Laptops: 768px to 1024px */
+@media (max-width: 1024px) {
+    .profile-page {
+        padding-top: 40px;
+    }
+
+    .profile-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .profile-group input {
+        width: 100%;
+        font-size: 18px;
+        height: 45px;
+    }
+
+    .profile-btn {
+        align-self: center;
+        width: 120px;
+        height: 36px;
+        font-size: 13px;
+    }
+}
+
+/* Mobile Devices: 767px and below */
+@media (max-width: 767px) {
+    .profile-page {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .profile-title {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .profile-form {
+        gap: 20px;
+    }
+
+    .profile-group {
+        height: auto;
+    }
+
+    .profile-group label {
+        font-size: 16px;
+    }
+
+    .profile-group input {
+        width: 100%;
+        font-size: 16px;
+        height: 40px;
+        padding: 12px;
+    }
+
+    .profile-group input::placeholder {
+        font-size: 16px;
+    }
+
+    .profile-btn {
+        align-self: center;
+        width: 100px;
+        height: 36px;
+        font-size: 12px;
+    }
+}

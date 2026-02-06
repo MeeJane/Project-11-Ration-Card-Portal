@@ -1,0 +1,421 @@
+:root {
+    --dark-blue: #373C7D;
+    --light-blue: #E8EDF2;
+    --font-family: "Inter";
+}
+
+.appli_step4 {
+    width: 113vw;
+    height: 1105px;
+    margin: 0;
+    background: #EEF3F8;
+    font-family: var(--font-family), sans-serif;
+    padding: 40px;
+}
+
+/* STEP BAR */
+
+.step2-bar {
+    width: 1258px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.step2-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #2F357A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28.9px;
+    z-index: 1;
+}
+
+.step2-line {
+    position: absolute;
+    height: 7px;
+    background: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* between 1 & 2 */
+.step2-line:nth-child(1) {
+    left: 80px;
+    width: calc(33.33% - 80px);
+}
+
+/* between 2 & 3 */
+.step2-line:nth-child(2) {
+    left: 36.33%;
+    width: calc(33.33% - 80px);
+}
+
+/* between 3 & 4 */
+.step2-line:nth-child(3) {
+    left: 66.66%;
+    width: calc(33.33% - 80px);
+}
+
+
+.step2-line.active {
+    background: #4D7399;
+}
+
+
+.step4-container {
+    width: 1440px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* TITLE */
+
+.step4-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+/* DESC */
+
+.step4-desc {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+/* SUB */
+
+.step4-subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+/* BOX */
+
+.step4-box {
+    width: 1212px;
+    height: 72px;
+    background: #F7FAFC;
+    border: 1px solid #00000040;
+    box-shadow: 0 4px 4px #00000040;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* LEFT */
+
+.step4-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ICON */
+
+.step4-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: #E8EDF2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+/* BOX TEXT */
+
+.step4-box-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.step4-box-desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4D7399;
+}
+
+/* UPLOAD */
+
+.step4-upload {
+    width: 84px;
+    height: 32px;
+    border-radius: 8px;
+    background: #E8EDF2;
+    border: none;
+    box-shadow: 0 4px 4px #00000040;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Uploaded state */
+
+.step4-upload.uploaded {
+    width: 85px;
+    padding: 5px;
+    height: 31px;
+    background: #373C7D;
+    color: #F7FAFC;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+    cursor: default;
+}
+
+
+/* BUTTONS */
+
+.step4-buttons {
+    width: 1212px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.step4-prev {
+    background: #E8EDF2;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    box-shadow: 0 4px 4px #00000040;
+    font-weight: 700;
+}
+
+.step4-submit {
+    width: 219px;
+    height: 40px;
+    background: #373C7D;
+    color: #F7FAFC;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Mobile Devices: up to 767px */
+@media (max-width: 767px) {
+    .appli_step4 {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+
+    /* STEP BAR */
+    .step2-bar {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .step2-circle {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .step2-line {
+        display: none;
+        /* hide connecting lines for mobile */
+    }
+
+    /* CONTAINER */
+    .step4-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* TITLE & DESC */
+    .step4-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .step4-desc,
+    .step4-subtitle {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    /* BOX */
+    .step4-box {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .step4-left {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .step4-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .step4-box-title {
+        font-size: 14px;
+    }
+
+    .step4-box-desc {
+        font-size: 12px;
+    }
+
+    .step4-upload {
+        width: 70px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .step4-upload.uploaded {
+        width: 70px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    /* BUTTONS */
+    .step4-buttons {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .step4-prev,
+    .step4-submit {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .step4-submit {
+        height: 40px;
+    }
+}
+
+/* Laptop / Desktop: from 768px and above */
+@media (min-width: 768px) {
+    .appli_step4 {
+        width: 113vw;
+        height: 1105px;
+        padding: 40px;
+    }
+
+    /* STEP BAR */
+    .step2-bar {
+        width: 1258px;
+        flex-direction: row;
+        height: 80px;
+    }
+
+    .step2-circle {
+        width: 80px;
+        height: 80px;
+        font-size: 28.9px;
+    }
+
+    .step2-line {
+        display: block;
+    }
+
+    /* CONTAINER */
+    .step4-container {
+        width: 1440px;
+        padding: 40px;
+    }
+
+    /* TITLE & DESC */
+    .step4-title {
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .step4-desc {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .step4-subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    /* BOX */
+    .step4-box {
+        width: 1212px;
+        height: 72px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .step4-left {
+        gap: 15px;
+    }
+
+    .step4-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+
+    .step4-box-title {
+        font-size: 16px;
+    }
+
+    .step4-box-desc {
+        font-size: 14px;
+    }
+
+    .step4-upload {
+        width: 84px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .step4-upload.uploaded {
+        width: 85px;
+        height: 31px;
+        font-size: 14px;
+    }
+
+    /* BUTTONS */
+    .step4-buttons {
+        flex-direction: row;
+        gap: 20px;
+        width: 1212px;
+    }
+
+    .step4-prev {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+
+    .step4-submit {
+        width: 219px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
